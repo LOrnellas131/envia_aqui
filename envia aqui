@@ -39,7 +39,6 @@ public class Projeto {
         System.out.println(" ");
         
         //Matriz B
-        System.out.println(" ");
         System.out.println("\nMatriz B");
         for (i=0; i<tamanho; i++) {
             for (j=0; j<tamanho; j++) {
@@ -48,7 +47,6 @@ public class Projeto {
             }
             System.out.println(" ");
         }
-        System.out.println(" ");
         System.out.println(" ");
         
         System.out.print("Diagonal Principal da matriz B: ");
@@ -64,8 +62,6 @@ public class Projeto {
             j--;
         }
         System.out.println(" ");
-        System.out.println(" ");
-        System.out.println(" ");
         
         //Soma de matrizes
         System.out.println("Soma das matrizes: ");
@@ -78,14 +74,13 @@ public class Projeto {
         }
         System.out.println(" ");
         
-          System.out.print("Diagonal Principal da matriz soma: ");
+        System.out.print("Diagonal Principal da matriz soma: ");
         for (i=0; i<tamanho; i++) {
-             System.out.print(C[i][i] + " ");
+            System.out.print(C[i][i] + " ");
         }
         
         System.out.println(" ");
-        
-          System.out.print("Diagonal Secundaria da matriz soma: ");
+        System.out.print("Diagonal Secundaria da matriz soma: ");
         j = tamanho-1;
         for (i=0; i<tamanho; i++){
             System.out.print(C[i][j] + " ");
@@ -94,7 +89,7 @@ public class Projeto {
         System.out.println(" ");
         
         //Subtracao de matrizes
-        System.out.println("Subtracao das matrizes: ");
+        System.out.println("\nSubtracao das matrizes: ");
         for (i=0; i<tamanho; i++) {
             for (j=0; j<tamanho; j++) {
                 D[i][j] = A[i][j] - B[i][j];
@@ -103,14 +98,14 @@ public class Projeto {
             System.out.println(" ");
         }
         
-          System.out.print("Diagonal Principal da matriz subtracao: ");
+        System.out.print("Diagonal Principal da matriz subtracao: ");
         for (i=0; i<tamanho; i++) {
-             System.out.print(D[i][i] + " ");
+            System.out.print(D[i][i] + " ");
         }
         
         System.out.println(" ");
         
-          System.out.print("Diagonal Secundaria da matriz subtracao: ");
+        System.out.print("Diagonal Secundaria da matriz subtracao: ");
         j = tamanho-1;
         for (i=0; i<tamanho; i++){
             System.out.print(E[i][j] + " ");
@@ -135,15 +130,13 @@ public class Projeto {
         
         
         System.out.println(" ");
-        
         System.out.print("Diagonal Principal da matriz multiplicacao: ");
         for (i=0; i<tamanho; i++) {
              System.out.print(E[i][i] + " ");
         }
         
         System.out.println(" ");
-        
-          System.out.print("Diagonal Secundaria da matriz multiplicacao: ");
+        System.out.print("Diagonal Secundaria da matriz multiplicacao: ");
         j = tamanho-1;
         for (i=0; i<tamanho; i++){
             System.out.print(E[i][j] + " ");
@@ -155,24 +148,23 @@ public class Projeto {
 
         //Multiplicação das matrizes por um número real
         int real = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um numero real para multiplicar as matrizes A e B"));
-    System.out.print("Multiplicação da matriz A por " + real + "\n");
-    for (i=0; i<tamanho; i++) {
-        for (j=0; j<tamanho; j++) {
-            F[i][j] = A[i][j] * real;
-            System.out.print(F[i][j] + " ");
-        }
-        System.out.println(" ");
-    }
-    System.out.println(" ");
-    
-      System.out.print("Diagonal Principal por numero real: ");
+        System.out.print("Multiplicação da matriz A por " + real + ":\n");
         for (i=0; i<tamanho; i++) {
-             System.out.print(F[i][i] + " ");
+            for (j=0; j<tamanho; j++) {
+                F[i][j] = A[i][j] * real;
+                System.out.print(F[i][j] + " ");
+            }
+            System.out.println(" ");
         }
         
         System.out.println(" ");
+        System.out.print("Diagonal Principal por numero real: ");
+        for (i=0; i<tamanho; i++) {
+            System.out.print(F[i][i] + " ");
+        }
         
-          System.out.print("Diagonal Secundaria por numero real: ");
+        System.out.println(" ");
+        System.out.print("Diagonal Secundaria por numero real: ");
         j = tamanho-1;
         for (i=0; i<tamanho; i++){
             System.out.print(F[i][j] + " ");
@@ -181,24 +173,23 @@ public class Projeto {
         System.out.println(" ");
         System.out.println(" ");
         
-         System.out.print("Multiplicação da matriz B por " + real + "\n");
-    for (i=0; i<tamanho; i++) {
-        for (j=0; j<tamanho; j++) {
-            G[i][j] = B[i][j] * real;
-            System.out.print(G[i][j] + " ");
-        }
-        System.out.println(" ");
-    }
-    System.out.println(" ");
-    
-      System.out.print("Diagonal Principal por numero real: ");
+        System.out.print("Multiplicação da matriz B por " + real + ":\n");
         for (i=0; i<tamanho; i++) {
-             System.out.print(G[i][i] + " ");
+            for (j=0; j<tamanho; j++) {
+                G[i][j] = B[i][j] * real;
+                System.out.print(G[i][j] + " ");
+            }
+            System.out.println(" ");
         }
         
         System.out.println(" ");
+        System.out.print("Diagonal Principal por numero real: ");
+        for (i=0; i<tamanho; i++) {
+            System.out.print(G[i][i] + " ");
+        }
         
-          System.out.print("Diagonal Secundaria por numero real: ");
+        System.out.println(" ");
+        System.out.print("Diagonal Secundaria por numero real: ");
         j = tamanho-1;
         for (i=0; i<tamanho; i++){
             System.out.print(G[i][j] + " ");
