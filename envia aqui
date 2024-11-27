@@ -155,7 +155,7 @@ public class Projeto {
 
         //Multiplicação das matrizes por um número real
         int real = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um numero real para multiplicar as matrizes A e B"));
-    System.out.print("Multiplicação das matrizes por " + real + "\n");
+    System.out.print("Multiplicação da matriz A por " + real + "\n");
     for (i=0; i<tamanho; i++) {
         for (j=0; j<tamanho; j++) {
             F[i][j] = A[i][j] * real;
@@ -181,7 +181,7 @@ public class Projeto {
         System.out.println(" ");
         System.out.println(" ");
         
-         System.out.print("Multiplicação das matrizes por " + real + "\n");
+         System.out.print("Multiplicação da matriz B por " + real + "\n");
     for (i=0; i<tamanho; i++) {
         for (j=0; j<tamanho; j++) {
             G[i][j] = B[i][j] * real;
