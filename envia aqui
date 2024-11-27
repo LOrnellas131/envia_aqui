@@ -1,24 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package projeto;
-
 import javax.swing.JOptionPane;
-
-/**
- *
- * @author Admin
- */
 public class Projeto {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        
-        
         int tamanho = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o tamanho das matrizes:\n(Linhas e colunas)"));
         int A [][] = new int [tamanho][tamanho]; //matriz A
         int B [][] = new int [tamanho][tamanho]; //matriz B
@@ -26,7 +10,7 @@ public class Projeto {
         int D [][] = new int [tamanho][tamanho]; //matriz sub
         int E [][] = new int [tamanho][tamanho]; //matriz mult
         int F [][] = new int [tamanho][tamanho]; //matriz A por real
-        int G [][] = new int [tamanho][tamanho];
+        int G [][] = new int [tamanho][tamanho]; //matriz B por real
         int i, j, k;
         
         //Matriz A
@@ -150,7 +134,6 @@ public class Projeto {
         }
         
         
-        
         System.out.println(" ");
         
         System.out.print("Diagonal Principal da matriz multiplicacao: ");
@@ -168,11 +151,8 @@ public class Projeto {
         }
         System.out.println(" ");
         System.out.println(" ");
-         
-        
-        
-        
-        
+
+
         //Multiplicação das matrizes por um número real
         int real = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um numero real para multiplicar as matrizes A e B"));
     System.out.print("Multiplicação das matrizes por " + real + "\n");
@@ -223,14 +203,6 @@ public class Projeto {
         for (i=0; i<tamanho; i++){
             System.out.print(G[i][j] + " ");
             j--;
+        }
     }
-
-    
 }
-}
-
-    
-    
-
-
-Envia aqui
